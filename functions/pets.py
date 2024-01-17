@@ -1,7 +1,16 @@
-def describe_pet(pet_name, animal_type='dog'):
-    """Display information about pet."""
-    print(f"\nI have a {animal_type}.")
-    print(f"My {animal_type}'s name is {pet_name.title()}.")
+def make_shirt(message="Hello", size="Large"):
+    """ prints the size and the message printed on it."""
+    print(f"This shirt is {size} size and has the message '{message.title()}' on it.")
 
-describe_pet(pet_name="hamster")
-describe_pet(pet_name='dog', animal_type="cat")
+make_shirt('I love python.')
+make_shirt()
+make_shirt(size="Medium", message="I love programming.")
+
+
+def describe_city(city, country="Colombia"):
+    """ indicates in which country this city is"""
+    print(f"{city.title()} is a city of {country}")
+
+describe_city("Bogota")
+describe_city("Miami", "USA")
+describe_city("Medellin")
