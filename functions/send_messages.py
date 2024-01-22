@@ -18,8 +18,9 @@ messages = ["today is a good day.", "trust in yourself", "live the moment"]
 show_messages(messages)
 
 sent_messages = []
-send_messages(messages, sent_messages)
+send_messages(messages[:], sent_messages)
 
 print("\nfinal list:")
 print(messages)
 print(sent_messages)
+
