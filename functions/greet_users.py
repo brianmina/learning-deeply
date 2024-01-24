@@ -1,8 +1,9 @@
-def greet_users(names):
-    """Print a simple greeting to each user in the list."""
-    for name in names:
-        msg = f"Hello, {name.title()}!"
-        print(msg)
+# import imports
+# from imports import greet_users
+# from imports import greet_users as gu
+import imports as imp
+from imports import *
 
-usernames = ['hannah', 'ty', 'margot']
-greet_users(usernames)
+names = ["Brian", "karl"]
+greet_users(names)
+
