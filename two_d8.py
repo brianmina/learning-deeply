@@ -1,6 +1,6 @@
 import plotly.express as px
 
-from two_d8_class import Die
+from die import Die
 
 die_1 = Die(6)
 die_2 = Die(6)

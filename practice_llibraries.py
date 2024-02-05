@@ -28,3 +28,8 @@ poss_results = range(1, max_results+1)
 
 frequencies = [results.count(value_freq) for value_freq in poss_results]
 print(frequencies)
+
+fig, ax = plt.subplots()
+ax.scatter(x=poss_results, y=results)
+
+plt.show()
