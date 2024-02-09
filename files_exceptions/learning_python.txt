@@ -1,0 +1,7 @@
+what I've learned in python:
+
+1. in python you can do math operations
+2. in python you can work with lots of information using list or dictionaries
+3. in python you can create video games
+4. in python you can  analyzie data and visualize them in graphs
+5. in python you can create a whole web application 
