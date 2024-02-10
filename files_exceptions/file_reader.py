@@ -5,9 +5,9 @@ path = Path("pi_digits.txt")
 contents = path.read_text()
 # contents = contents.rstrip()
 
-lines = contents.splitlines()
+
 pi_string = ""
-for line in lines:
+for line in contents.splitlines():
     pi_string += line
 
 
