@@ -1,8 +1,6 @@
 from pathlib import Path
 
 
-path = Path("guest_book.txt")
-
 prompt = "\nEnter your name: "
 prompt += "\n(Enter 'quit' to finish the program)"
 
@@ -17,8 +15,10 @@ while True:
     guest_names.append(names)
     print(guest_names)
 
-file_string = ""
-for names in guest_names:
-    file_string += f"{names}"
+file_string = ''
+for name in guest_names:
+    file_string += f"{name}\n"
 
+# path = Path('file_exceptions' / 'guest_book_new.txt')
+path = Path('guest_book_new.txt')
 path.write_text(file_string)
