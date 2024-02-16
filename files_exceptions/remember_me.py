@@ -25,7 +25,11 @@ def greet_user():
     path = Path("username.json")
     username = get_stored_username(path)
     if username:
-        print(f"Welcome back {username}")
+        verify_user = input(f"is '{username['username']}' your username? (y/n):  ")
+        if verify_user == "y":
+            print(f"Welcome back {username['username']}")
+        else:
+            get_new_username(path)
     else:
         username = get_new_username(path)
         print(f"We'll remember you when you come back, {username}!")
