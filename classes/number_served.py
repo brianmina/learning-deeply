@@ -6,7 +6,7 @@ class Restaurant:
         """initiate a restaurant"""
         self.restaurant_name = restaurant_name
         self.cuisine_type = cuisine_type
-
+        self.number_served = 8
 
     def describe_restaurant(self):
         """Print a description of the restaurant"""
@@ -18,6 +18,4 @@ class Restaurant:
 
 
 restaurant = Restaurant("new_one", "do not know")
-print(restaurant.n)
-
-
+print(restaurant.number_served)
