@@ -16,6 +16,16 @@ class Restaurant:
         """Prints a message indicating it is open."""
         print(f"{self.restaurant_name} is open now!")
 
+    def set_number_served(self, number_served):
+        """set the number of served"""
+        self.number_served = number_served
+
+    def increment_number_served(self, number_served):
+        """Increment the number of served"""
+        self.number_served += number_served
+        print(f"{self.number_served} have been served today!")
+
 
 restaurant = Restaurant("new_one", "do not know")
-print(restaurant.number_served)
+restaurant.set_number_served(2)
+restaurant.increment_number_served(2)

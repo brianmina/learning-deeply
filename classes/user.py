@@ -9,6 +9,7 @@ class User:
         self.email = ""
         self.phone_number = ""
         self.birth_date = ""
+        self.login_attempts = 0
 
     def describe_user(self):
         """prints a message with the user information."""
@@ -19,7 +20,18 @@ class User:
         """Prints a message greeting to the user"""
         print(f"Hello, {self.first_name}")
 
+    def increment_login_attempt(self, login):
+        """Increment the number of login attempts."""
+        self.login_attempts += login
+
+    def reset_login_attempt(self):
+        """Reset the number of login attempts."""
+        self.login_attempts = 0
+
 
 user_1 = User("John", "Doe")
-user_1.describe_user()
-user_1.greet_user()
+user_1.increment_login_attempt(1)
+user_1.increment_login_attempt(3)
+user_1.reset_login_attempt()
+
+print(user_1.login_attempts)
